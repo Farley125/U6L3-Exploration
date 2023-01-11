@@ -4,14 +4,11 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int[] nums = {5, -10, 8, 12, 2, -6, 0};
-        System.out.println(ArrayAlgorithms.customToString(nums));
-        int[] nums2 = {15};
-        System.out.println(ArrayAlgorithms.customToString(nums2));
+        int[] nums = {5, 1, 3, 4, 7};
+        ArrayAlgorithms.shiftLeftModify(nums);
 
-        System.out.println("----");
-        // original numbers lists NOT modified
+        // original array IS modified
         System.out.println(Arrays.toString(nums));
-        System.out.println(Arrays.toString(nums2));
     }
+
 }
